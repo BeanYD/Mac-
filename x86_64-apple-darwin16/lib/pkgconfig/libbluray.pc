@@ -1,0 +1,11 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: libbluray
+Description: library supporting Blu-ray playback
+Version: 1.0.2
+Cflags: -I${includedir}
+Libs:  -L${libdir} -lbluray   
+Requires:    libxml-2.0 freetype2

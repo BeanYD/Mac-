@@ -1,0 +1,13 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=@@CONTRIB_PREFIX@@
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: harfbuzz
+Description: HarfBuzz text shaping library
+Version: 1.7.4
+
+Libs: -L${libdir} -lharfbuzz
+Libs.private: -lm    -framework ApplicationServices
+Requires.private:  
+Cflags: -I${includedir}/harfbuzz

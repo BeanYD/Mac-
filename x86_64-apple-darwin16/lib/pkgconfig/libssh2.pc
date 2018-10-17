@@ -1,0 +1,16 @@
+###########################################################################
+# libssh2 installation details
+###########################################################################
+
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: libssh2
+URL: https://www.libssh2.org/
+Description: Library for SSH-based communication
+Version: 1.8.0
+Cflags: -I${includedir}
+Libs:  -L${libdir} -lssh2  -lgcrypt   -lgcrypt -lgpg-error
+Requires:   zlib

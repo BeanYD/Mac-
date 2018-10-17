@@ -1,0 +1,11 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: samplerate
+Description: An audio Sample Rate Conversion library
+Requires: 
+Version: 0.1.9
+Libs: -L${libdir} -lsamplerate
+Cflags: -I${includedir} 

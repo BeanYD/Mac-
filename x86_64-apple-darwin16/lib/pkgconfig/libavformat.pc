@@ -1,0 +1,14 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 58.3.100
+Requires: libavcodec >= 58.6.103, libavutil >= 56.5.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lm -lz -Wl,-framework,CoreFoundation -Wl,-framework,Security
+Libs.private: 
+Cflags: -I${includedir}

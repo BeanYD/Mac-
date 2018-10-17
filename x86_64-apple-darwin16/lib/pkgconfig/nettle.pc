@@ -1,0 +1,11 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: Nettle
+Description: Nettle low-level cryptographic library (symmetric algorithms)
+URL: http://www.lysator.liu.se/~nisse/nettle
+Version: 3.3
+Libs: -L${libdir} -lnettle
+Cflags: -I${includedir}

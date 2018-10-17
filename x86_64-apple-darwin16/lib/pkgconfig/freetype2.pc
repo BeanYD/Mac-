@@ -1,0 +1,12 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=@@CONTRIB_PREFIX@@
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: FreeType 2
+URL: http://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 21.0.15
+Cflags: -I${includedir}/freetype2
+Libs:  -L${libdir} -lfreetype  
+Requires:   zlib

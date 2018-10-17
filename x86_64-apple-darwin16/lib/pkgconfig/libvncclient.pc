@@ -1,0 +1,12 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: LibVNCClient
+Description: A library for easy implementation of a VNC client.
+Version: 0.9.10
+Cflags: -I${includedir}
+
+Libs:  -L${libdir} -lvncclient  -lpthread -lz -lpng -ljpeg -L@@CONTRIB_PREFIX@@/lib -lgcrypt -lgpg-error -L@@CONTRIB_PREFIX@@/lib -lgnutls @@CONTRIB_PREFIX@@/lib/libz.a -lgmp -lhogweed -lgmp -lnettle  
+Requires:   zlib, gnutls

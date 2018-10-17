@@ -1,0 +1,14 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.6.103
+Requires: libavutil >= 56.5.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -L@@CONTRIB_PREFIX@@/lib -lvpx -lm -lpthread -L@@CONTRIB_PREFIX@@/lib -lvpx -lm -lpthread -pthread -lm -lz -framework AudioToolbox -lgsm -lmp3lame -L@@CONTRIB_PREFIX@@/lib -lopenjp2 -lm
+Libs.private: 
+Cflags: -I${includedir}

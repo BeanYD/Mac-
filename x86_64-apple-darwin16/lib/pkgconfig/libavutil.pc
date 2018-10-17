@@ -1,0 +1,14 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.5.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm -framework CoreFoundation -framework CoreVideo -framework CoreMedia
+Libs.private: 
+Cflags: -I${includedir}

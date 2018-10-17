@@ -1,0 +1,11 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+builders=@@CONTRIB_PREFIX@@/lib/sidplay/builders
+
+Name: libsidplay
+Description: C64 cycle exact stereo sidplayer library.
+Version: 2.1.1
+Libs: ${libdir}/libsidplay2.la
+Cflags: -DHAVE_UNIX -I${includedir}

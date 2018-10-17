@@ -1,0 +1,11 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: libout123
+Description: A streaming audio output API derived from mpg123
+Requires: 
+Version: 1.25.7
+Libs: -L${libdir} -lout123 
+Cflags: -I${includedir} 

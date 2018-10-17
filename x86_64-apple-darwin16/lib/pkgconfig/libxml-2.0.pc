@@ -1,0 +1,12 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+modules=1
+
+Name: libXML
+Version: 2.9.4
+Description: libXML library version2.
+Cflags: -I${includedir}/libxml2 
+Libs:  -L${libdir} -lxml2       -lm  
+Requires:  

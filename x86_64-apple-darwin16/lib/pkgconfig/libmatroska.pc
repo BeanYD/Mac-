@@ -1,0 +1,11 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name:             libmatroska
+Description:      Library for parsing EBML data structures
+Version:          1.4.7
+Cflags:           -I${includedir}
+Libs:              -L${libdir} -lmatroska 
+Requires:   libebml

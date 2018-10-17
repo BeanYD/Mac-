@@ -1,0 +1,17 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+includedir=@@CONTRIB_PREFIX@@/include
+datarootdir=@@CONTRIB_PREFIX@@/share
+libdir=@@CONTRIB_PREFIX@@/lib
+datadir=${datarootdir}
+pkgincludedir=@@CONTRIB_PREFIX@@/include/aribb24
+pkgdatadir=${datadir}/aribb24
+pkglibdir=${libdir}/aribb24
+pluginsdir=${pkglibdir}/plugins
+
+Name: ARIB B24 Library
+Description: ARIB B24 Captions decoder
+Version: 1.0.3
+Cflags: -I${includedir}
+Libs:  -L${libdir} -laribb24  -lm
+Requires:  libpng 

@@ -1,0 +1,13 @@
+# pkg-config file from libvpx v1.6.1
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: vpx
+Description: WebM Project VPx codec implementation
+Version: 1.6.1
+Conflicts:
+Cflags: -I${includedir}
+Libs:  -L${libdir} -lvpx -lm  -lm -lpthread
+Requires:  

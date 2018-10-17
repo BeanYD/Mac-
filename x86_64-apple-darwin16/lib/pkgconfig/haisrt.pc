@@ -1,0 +1,12 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: srt
+Description: SRT library set
+Version: 1.2.2
+Cflags: -I${includedir}
+
+Libs:  -L${libdir} -lsrt      -L@@CONTRIB_PREFIX@@/lib -lgnutls @@CONTRIB_PREFIX@@/lib/libz.a -lgmp -lhogweed -lgmp -lnettle /usr/lib/libpthread.dylib -lc++
+Requires:  

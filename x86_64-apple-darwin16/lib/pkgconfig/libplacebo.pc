@@ -1,0 +1,5 @@
+Name: libplacebo
+Description: Reusable library for GPU-accelerated video/image rendering
+Version: 0.2.1
+Libs: -L@@CONTRIB_PREFIX@@/lib -lplacebo 
+Cflags: -I@@CONTRIB_PREFIX@@/include

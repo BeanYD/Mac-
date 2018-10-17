@@ -1,0 +1,10 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: libdvdcss
+Description: DVD access and decryption library.
+Version: 1.4.1
+Libs: -L${libdir} -ldvdcss
+Cflags: -I${includedir} -I${includedir}/dvdcss

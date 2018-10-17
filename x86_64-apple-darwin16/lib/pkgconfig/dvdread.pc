@@ -1,0 +1,13 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: libdvdread
+Description: Low level DVD access library
+Version: 6.0.0
+
+Requires: libdvdcss >= 1.2
+
+Cflags: -I${includedir}
+Libs: -L${libdir} -ldvdread

@@ -1,0 +1,13 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: caca
+Description: Colour ASCII-Art library
+Version: 0.99.beta17
+Requires: 
+Conflicts: 
+Libs: -L${libdir} -lcaca
+Libs.private:  -lz
+Cflags: -I${includedir}

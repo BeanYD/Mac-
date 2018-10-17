@@ -1,0 +1,16 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include/orc-0.4
+toolsdir=${exec_prefix}/bin
+
+
+Name: orc-0.4
+Description: Library of Optimized Inner Loops Runtime Compiler
+Version: 0.4.18
+Libs: -L${libdir} -lorc-0.4
+Libs.private:   -lpthread
+Cflags: -I${includedir}
+
+orcc=${toolsdir}/orcc
+

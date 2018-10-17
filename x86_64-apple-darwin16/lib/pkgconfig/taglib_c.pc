@@ -1,0 +1,12 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=@@CONTRIB_PREFIX@@
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+
+Name: TagLib C Bindings
+Description: Audio meta-data library (C bindings)
+Requires: taglib
+Version: 1.11
+Libs: -L@@CONTRIB_PREFIX@@/lib -ltag_c
+Cflags: -I@@CONTRIB_PREFIX@@/include/taglib 

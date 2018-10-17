@@ -1,0 +1,11 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: ZVBI 
+Description: VBI Capturing and Decoding Library
+Requires: 
+Version: 0.2.35
+Libs: -L${libdir} -lzvbi -lm  -lpng -lz -lpthread  -lm -liconv
+Cflags: -I${includedir}

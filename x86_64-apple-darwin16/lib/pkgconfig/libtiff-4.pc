@@ -1,0 +1,11 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: libtiff
+Description:  Tag Image File Format (TIFF) library.
+Version: 4.0.7
+Libs: -L${libdir} -ltiff
+Libs.private: 
+Cflags: -I${includedir}

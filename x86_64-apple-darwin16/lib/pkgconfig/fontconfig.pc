@@ -1,0 +1,16 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+sysconfdir=${prefix}/etc
+localstatedir=${prefix}/var
+PACKAGE=fontconfig
+confdir=${sysconfdir}/fonts
+cachedir=~/Library/Caches/fontconfig
+
+Name: Fontconfig
+Description: Font configuration and customization library
+Version: 2.12.3
+Cflags: -I${includedir}  -I@@CONTRIB_PREFIX@@/include/freetype2 -I@@CONTRIB_PREFIX@@/include   -I@@CONTRIB_PREFIX@@/include/libxml2
+Libs:  -L${libdir} -lfontconfig   -L@@CONTRIB_PREFIX@@/lib -lfreetype -lz   -L@@CONTRIB_PREFIX@@/lib -lxml2 -lm
+Requires:   freetype2   libxml-2.0

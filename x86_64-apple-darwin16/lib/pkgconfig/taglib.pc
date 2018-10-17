@@ -1,0 +1,11 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=@@CONTRIB_PREFIX@@
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: TagLib
+Description: Audio meta-data library
+Requires: 
+Version: 1.11
+Libs: -L${libdir} -ltag
+Cflags: -I${includedir}/taglib

@@ -1,0 +1,11 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: libupnp
+Description: Linux SDK for UPnP Devices
+Version: 1.6.19
+Libs: -D_THREAD_SAFE   -L${libdir} -lupnp -lthreadutil -lixml 
+Cflags: -D_THREAD_SAFE  -I${includedir}/upnp
+

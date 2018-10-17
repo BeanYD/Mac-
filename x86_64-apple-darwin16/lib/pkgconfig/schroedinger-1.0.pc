@@ -1,0 +1,15 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include/schroedinger-1.0
+toolsdir=${exec_prefix}/bin
+
+
+Name: schroedinger-1.0
+Description: Dirac codec library
+Version: 1.0.11
+Cflags: -I${includedir}
+
+
+Libs:  -L${libdir} -lschroedinger-1.0   
+Requires:    orc-0.4 >= 0.4.16

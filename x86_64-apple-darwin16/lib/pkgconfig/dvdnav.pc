@@ -1,0 +1,12 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: libdvdnav
+Description: DVD Navigation library
+Version: 6.0.0
+
+Requires: dvdread >= 4.1.2
+Cflags: -I${includedir} 
+Libs: -L${libdir} -ldvdnav -lpthread

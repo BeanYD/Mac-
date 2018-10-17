@@ -1,0 +1,13 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: SDL_image
+Description: image loading library for Simple DirectMedia Layer
+Version: 1.2.12
+Requires: sdl >= 1.2.10
+Libs: -L${libdir} -lSDL_image
+Libs.private:  -ljpeg -ltiff
+Cflags: -I${includedir}/SDL
+

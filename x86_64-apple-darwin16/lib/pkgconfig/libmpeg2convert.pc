@@ -1,0 +1,10 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: libmpeg2convert
+Description: Image conversion library helper for libmpeg2
+Version: 0.5.1
+Libs: -L${libdir} -lmpeg2convert
+Cflags: -I${includedir}/mpeg2dec

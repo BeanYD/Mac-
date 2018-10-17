@@ -1,0 +1,11 @@
+prefix=@@CONTRIB_PREFIX@@
+exec_prefix=${prefix}
+libdir=@@CONTRIB_PREFIX@@/lib
+includedir=@@CONTRIB_PREFIX@@/include
+
+Name: FLAC
+Description: Free Lossless Audio Codec Library
+Version: 1.3.2
+Cflags: -I${includedir}
+Libs:  -L${libdir} -lFLAC  -lm
+Requires:   ogg
